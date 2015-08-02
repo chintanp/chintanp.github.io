@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
     <title>Programming Love  by chintanp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
+    <section class="page-header">
+      <h1 class="project-name">Programming Love </h1>
+      <h2 class="project-tagline">Page for my github account. All important repos descibed here. </h2>
+    </section>
 
-        <header>
-          <h1>Programming Love </h1>
-          <h2>Page for my github account. All important repos descibed here. </h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/chintanp" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h1>
+    <section class="main-content">
+      <h1>
 <a id="welcome-to-my-github-page" class="anchor" href="#welcome-to-my-github-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my GitHub page</h1>
 
-<p>This page is place where my most important projects are showcased. The links are followed by brief description of the page. Clicking the link takes you to the project's GitHub pages that have the details about the project, motivation and explanation of the code. </p>
+<p>This page is place where my most important projects are showcased. </p>
 
 <h2>
-<a id="-finext" class="anchor" href="#-finext" aria-hidden="true"><span class="octicon octicon-link"></span></a>* FinEXT</h2>
+<a id="finext" class="anchor" href="#finext" aria-hidden="true"><span class="octicon octicon-link"></span></a>FINEXT</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Finite Element Analysis(FEA) is typically constrained in the domain of desktop, massive workstations, requiring installation and limiting access with licenses. FINEXT is an attempt to alleviate some of the problems of desktop based FEA solutions. It allows modelling from the browser, and then the model is solved in the cloud and result served back to you. This means, you do not have to install anything and work on your model from anywhere, ever your mobile device. Written completely in JavaScript, FINEXT, based on client-server architecture, allows for clear separation of concerns and would eventually allow switching either without affecting the other. Details of the current implementation and code explanation <a href="http://chintanp.github.io/finext/#/">here</a>. </p>
+
+<h2>
+<a id="weather-station-server" class="anchor" href="#weather-station-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Weather Station Server</h2>
+
+<p>The backend-server written in NodeJS interacts with the data-acquisition system and queries for weather data. The response is the parsed, stored in a local mongodb data database, uploaded to a cloud mongodb instance, uploaded to world weather aggregators like openweathermap.org and served to browser, all in real-time. On the browser, a minimal AngularJS app receives the data as it arrives and creates a table on the fly, so as the code is robust even for new sensor additions on the weather station. Details about the architecture, instrumentation and code <a href="http://chintanp.github.io/weather_station/#/">here</a>.</p>
+
+<h2>
+<a id="controlling-analysis--design-software-programmatically" class="anchor" href="#controlling-analysis--design-software-programmatically" aria-hidden="true"><span class="octicon octicon-link"></span></a>Controlling Analysis &amp; Design Software Programmatically</h2>
+
+<h3>
+<a id="staad-pro-v8i" class="anchor" href="#staad-pro-v8i" aria-hidden="true"><span class="octicon octicon-link"></span></a>STAAD Pro V8i</h3>
+
+<p>One of the most popular package for analysis and design of concrete and steel structures, it does'nt, natively play well with other applications like AUTOCAD, or EXCEL which are essentially the part of the process workflow. Thankfully, it exposes most of the functionality through it API - OpenSTAAD. Macros can be written in VBA inside STAAD that be used to control it, a few examples, introduction to the API and code explanation <a href="http://chintanp.github.io/staad_macros/">here</a>. </p>
+
+<p>If however, you need to do something, not supported by the API currently like, for example, reading the design results, then one might have to resort more arcane approach of parsing the results file, a tedious and error-prone task, as output standards are never documented, and one has to rely on reading and understanding the results text file. Files with extension ANL generated by STAAD can be opened in a text-editor and hence, be parsed by any program. One such attempt using regular expressions to read through the file and extracting useful model information in VC++ in this <a href="https://github.com/chintanp/STAAD_VCPP2015">repo</a>.</p>
 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
@@ -58,14 +60,15 @@
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
 
-        <footer>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+      <footer class="site-footer">
 
-        
-      </div>
-    </div>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
+
