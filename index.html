@@ -21,11 +21,11 @@
           <h1>Code and Other Stuff</h1>
           <h2>Page for my github account. All important repos descibed here. </h2>
         </header>
-<!--
+
         <section id="downloads" class="clearfix">
           <a href="https://github.com/chintanp" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
--->
+
         <hr>
 
         <section id="main_content">
@@ -57,7 +57,7 @@
 <h3>
 <a id="abaqus" class="anchor" href="#abaqus" aria-hidden="true"><span class="octicon octicon-link"></span></a>ABAQUS</h3>
 
-<p>A general FEA solution, ABAQUS has very detailed UI that makes it difficult for beginners to make changes to model quickly. Thankfully, they provide pretty powerful python and C++ APIs to affect the changes programmatically. Often helpful in using the API, is the auto-generated JNL file in the working directory, which has, in python, each and every step as in performed in through the UI. This makes using the API a breeze for when some complicated UI jugglery is involved. This python code reads the model-info like length, width and height of beam from an excel file and then updates the model. It then waits for the model to be solved based on the load and applied boundary conditions and then exports the results to an excel file. </p>
+<p>A general FEA solution, ABAQUS has very detailed UI that makes it difficult for beginners to make changes to model quickly. Thankfully, they provide pretty powerful python and C++ APIs to affect the changes programmatically. Often helpful in using the API, is the auto-generated JNL file in the working directory, which has, in python, each and every step as performed through the UI. This makes using the API a breeze for when some complicated UI jugglery is involved. <a href="https://github.com/chintanp/python_abaqus">This</a> python code reads the model-info like length, width and height of beam from an excel file and then updates the model. It then waits for the model to be solved based on the load and applied boundary conditions and then exports the results to an excel file. </p>
 
 <p>This programmatic approach can really help in performing parametric studies on models where analysis has to be done numerous times after making some changes in the base model. The API also enables in the creation of custom UIs on top of the existing software enabling ease of use for special cases. </p>
 
