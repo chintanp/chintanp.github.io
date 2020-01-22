@@ -1,94 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+  <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Code and Other Stuff by chintanp</title>
-  </head>
+  <title>Code and Other Stuff by chintanp</title>
+</head>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<body>
+  <div id="container">
+    <div class="inner">
 
-        <header>
-          <h1>Code and Other Stuff</h1>
-          <h2>Page for my github account. All important repos descibed here. </h2>
-        </header>
-<!-- 
+      <header>
+        <h1>Code and Other Stuff</h1>
+        <h2>Page for my github account. All important repos descibed here. </h2>
+      </header>
+      <!-- 
         <section id="downloads" class="clearfix">
           <a href="https://github.com/chintanp" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 -->
-        <hr>
+      <hr>
 
-        <section id="main_content">
-          <h1>
-<a id="welcome-to-my-github-page" class="anchor" href="#welcome-to-my-github-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my GitHub page</h1>
+      <section id="main_content">
+        <h1>
+          <a id="welcome-to-my-github-page" class="anchor" href="#welcome-to-my-github-page" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>Welcome to my GitHub page</h1>
 
-<p>This page is place where my most important projects are showcased. </p>
+        <p>This page is place where my most important projects are showcased. </p>
+        <!-- Latest first -->
 
-<h2>
-<a id="finext" class="anchor" href="#finext" aria-hidden="true"><span class="octicon octicon-link"></span></a>FINEXT</h2>
+        <h2>
+          <a id="evi-dss" class="anchor" href="#evi-dss" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>EVI-DSS</h2>
 
-<p>Finite Element Analysis(FEA) is typically constrained in the domain of desktop, massive workstations, requiring installation and limiting access with licenses. FINEXT is an attempt to alleviate some of the problems of desktop based FEA solutions. It allows modelling from the browser, and then the model is solved in the cloud and result served back to you. This means, you do not have to install anything and work on your model from anywhere, ever your mobile device. Written completely in JavaScript, FINEXT, based on client-server architecture, allows for clear separation of concerns and would eventually allow switching either without affecting the other. Details of the current implementation and code explanation <a href="http://chintanp.github.io/finext/#/">here</a>. </p>
+        <p>
+          The project EVI-DSS is a decision support system for electric vehicle infrastructure (EVI) design commissioned by the <a href="https://www.wsdot.wa.gov/">Washington State Department of Transportation</a>. The underlying modeling framework is general enough that the tool can be used at any scale, any where. The detailed documentation for the project with links to the code can be found <a href="https://evi-dss.readthedocs.io/en/latest/">here</a>.
 
-<h2>
-<a id="weather-station-server" class="anchor" href="#weather-station-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Weather Station Server</h2>
+        </p>
 
-<p>The backend-server written in NodeJS interacts with the data-acquisition system and queries for weather data. The response is the parsed, stored in a local mongodb data database, uploaded to a cloud mongodb instance, uploaded to world weather aggregators like openweathermap.org and served to browser, all in real-time. On the browser, a minimal AngularJS app receives the data as it arrives and creates a table on the fly, so as the code is robust even for new sensor additions on the weather station. Details about the architecture, instrumentation and code <a href="http://chintanp.github.io/weather_station/#/">here</a>.</p>
+        <h2>
+          <a id="demand_acep" class="anchor" href="#demand_acep" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>demand_acep</h2>
 
-<h2>
-<a id="controlling-analysis--design-software-programmatically" class="anchor" href="#controlling-analysis--design-software-programmatically" aria-hidden="true"><span class="octicon octicon-link"></span></a>Controlling Analysis &amp; Design Software Programmatically</h2>
+        <p>
+          Working with <a href="https://github.com/reconjohn">Yohan Min</a> and <a
+            href="https://github.com/aidowu">Atinuke Ademola-Idowu</a>, I developed a data-pipeline to process
+          high-resolution power meter time series data for the <a href="http://acep.uaf.edu/">Alaska
+            Center of Energy and Power</a> with the goal of quantifying the savings in demand charges by meter
+          aggregation. The resluting python package <a
+            href="https://github.com/demand-consults/demand_acep">demand_acep</a> is available open-source for general
+          consumption.
+        </p>
 
-<h3>
-<a id="staad-pro-v8i" class="anchor" href="#staad-pro-v8i" aria-hidden="true"><span class="octicon octicon-link"></span></a>STAAD Pro V8i</h3>
+        <h2>
+          <a id="finext" class="anchor" href="#finext" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>FINEXT</h2>
 
-<p>One of the most popular package for analysis and design of concrete and steel structures, it does'nt, natively play well with other applications like AUTOCAD, or EXCEL which are essentially the part of the process workflow. Thankfully, it exposes most of the functionality through it API - OpenSTAAD. Macros can be written in VBA inside STAAD that be used to control it, a few examples, introduction to the API and code explanation <a href="http://chintanp.github.io/staad_macros/">here</a>. </p>
+        <p>Finite Element Analysis(FEA) is typically constrained in the domain of desktop, massive workstations,
+          requiring installation and limiting access with licenses. FINEXT is an attempt to alleviate some of the
+          problems of desktop based FEA solutions. It allows modelling from the browser, and then the model is solved in
+          the cloud and result served back to you. This means, you do not have to install anything and work on your
+          model from anywhere, ever your mobile device. Written completely in JavaScript, FINEXT, based on client-server
+          architecture, allows for clear separation of concerns and would eventually allow switching either without
+          affecting the other. Details of the current implementation and code explanation <a
+            href="http://chintanp.github.io/finext/#/">here</a>. </p>
 
-<p>If however, you need to do something, not supported by the API currently like, for example, reading the design results, then one might have to resort more arcane approach of parsing the results file, a tedious and error-prone task, as output standards are never documented, and one has to rely on reading and understanding the results text file. Files with extension ANL generated by STAAD can be opened in a text-editor and hence, be parsed by any program. One such attempt using regular expressions to read through the file and extracting useful model information in VC++ in this <a href="https://github.com/chintanp/STAAD_VCPP2015">repo</a>.</p>
+        <h2>
+          <a id="weather-station-server" class="anchor" href="#weather-station-server" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>Weather Station Server</h2>
 
-<h3>
-<a id="abaqus" class="anchor" href="#abaqus" aria-hidden="true"><span class="octicon octicon-link"></span></a>ABAQUS</h3>
+        <p>The backend-server written in NodeJS interacts with the data-acquisition system and queries for weather data.
+          The response is the parsed, stored in a local mongodb data database, uploaded to a cloud mongodb instance,
+          uploaded to world weather aggregators like openweathermap.org and served to browser, all in real-time. On the
+          browser, a minimal AngularJS app receives the data as it arrives and creates a table on the fly, so as the
+          code is robust even for new sensor additions on the weather station. Details about the architecture,
+          instrumentation and code <a href="http://chintanp.github.io/weather_station/#/">here</a>.</p>
 
-<p>A general FEA solution, ABAQUS has very detailed UI that makes it difficult for beginners to make changes to model quickly. Thankfully, they provide pretty powerful python and C++ APIs to affect the changes programmatically. Often helpful in using the API, is the auto-generated JNL file in the working directory, which has, in python, each and every step as performed through the UI. This makes using the API a breeze for when some complicated UI jugglery is involved. <a href="https://github.com/chintanp/python_abaqus">This</a> python code reads the model-info like length, width and height of beam from an excel file and then updates the model. It then waits for the model to be solved based on the load and applied boundary conditions and then exports the results to an excel file. </p>
+        <h2>
+          <a id="controlling-analysis--design-software-programmatically" class="anchor"
+            href="#controlling-analysis--design-software-programmatically" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>Controlling Analysis &amp; Design Software Programmatically</h2>
 
-<p>This programmatic approach can really help in performing parametric studies on models where analysis has to be done numerous times after making some changes in the base model. The API also enables in the creation of custom UIs on top of the existing software enabling ease of use for special cases. </p>
+        <h3>
+          <a id="staad-pro-v8i" class="anchor" href="#staad-pro-v8i" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>STAAD Pro V8i</h3>
 
-<h2>
-<a id="tiva-c-launchpad---analog-to-digital-converter" class="anchor" href="#tiva-c-launchpad---analog-to-digital-converter" aria-hidden="true"><span class="octicon octicon-link"></span></a>TIVA-C Launchpad - Analog-to-Digital Converter</h2>
+        <p>One of the most popular package for analysis and design of concrete and steel structures, it does'nt,
+          natively play well with other applications like AUTOCAD, or EXCEL which are essentially the part of the
+          process workflow. Thankfully, it exposes most of the functionality through it API - OpenSTAAD. Macros can be
+          written in VBA inside STAAD that be used to control it, a few examples, introduction to the API and code
+          explanation <a href="http://chintanp.github.io/staad_macros/">here</a>. </p>
 
-<p>TIVA-C Launchpad is a low-cost general purpose cortex-M3 based micro-controller board from Texas Instruments. It allows interfacing of with various sensors, actuators and control systems using variety of communication options including serial, I2C, SPI etc. </p>
+        <p>If however, you need to do something, not supported by the API currently like, for example, reading the
+          design results, then one might have to resort more arcane approach of parsing the results file, a tedious and
+          error-prone task, as output standards are never documented, and one has to rely on reading and understanding
+          the results text file. Files with extension ANL generated by STAAD can be opened in a text-editor and hence,
+          be parsed by any program. One such attempt using regular expressions to read through the file and extracting
+          useful model information in VC++ in this <a href="https://github.com/chintanp/STAAD_VCPP2015">repo</a>.</p>
 
-<p>Various sensors like strain gages, load cells, LVDTs find application in Civil Engineering experimentation, and require costly data-acquisitions systems for recording of data and interfacing with PCs. This makes digital experiments to be limited to well-funded research labs and require constant support from system vendors, as in essence, their operation and programming is typical to that system. </p>
+        <h3>
+          <a id="abaqus" class="anchor" href="#abaqus" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>ABAQUS</h3>
 
-<p>A general-purpose board like TIVA-C launchpad, might not be a total replacement for industrial grade data-acquisition systems, they provide good starting points in learning the concepts of instrumentation, and for some cases be adequate for the problem at hand. </p>
+        <p>A general FEA solution, ABAQUS has very detailed UI that makes it difficult for beginners to make changes to
+          model quickly. Thankfully, they provide pretty powerful python and C++ APIs to affect the changes
+          programmatically. Often helpful in using the API, is the auto-generated JNL file in the working directory,
+          which has, in python, each and every step as performed through the UI. This makes using the API a breeze for
+          when some complicated UI jugglery is involved. <a href="https://github.com/chintanp/python_abaqus">This</a>
+          python code reads the model-info like length, width and height of beam from an excel file and then updates the
+          model. It then waits for the model to be solved based on the load and applied boundary conditions and then
+          exports the results to an excel file. </p>
 
-<p>To illustrate the use of the board, and for general experiments involving analog sensors, code was developed and tested using a potentiometer as a sensor. <a href="https://github.com/chintanp/ADC_SW_trigger_API/tree/dev">Code 1</a> triggers the ADC conversion after a fixed interval, while <a href="https://github.com/chintanp/ADC_Ext_Trigger_API/tree/dev">Code 2</a> triggers the ADC conversion upon a switch press. The code converts the analog signal to a digital value and then sends it to the connected UART device, normally a PC. Interfacing can be written on the PC to read this value and store it or relay it as per the requirement. </p>
-        </section>
+        <p>This programmatic approach can really help in performing parametric studies on models where analysis has to
+          be done numerous times after making some changes in the base model. The API also enables in the creation of
+          custom UIs on top of the existing software enabling ease of use for special cases. </p>
 
-        <footer>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+        <h2>
+          <a id="tiva-c-launchpad---analog-to-digital-converter" class="anchor"
+            href="#tiva-c-launchpad---analog-to-digital-converter" aria-hidden="true"><span
+              class="octicon octicon-link"></span></a>TIVA-C Launchpad - Analog-to-Digital Converter</h2>
 
-                  <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-65872646-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        <p>TIVA-C Launchpad is a low-cost general purpose cortex-M3 based micro-controller board from Texas Instruments.
+          It allows interfacing of with various sensors, actuators and control systems using variety of communication
+          options including serial, I2C, SPI etc. </p>
 
-      </div>
+        <p>Various sensors like strain gages, load cells, LVDTs find application in Civil Engineering experimentation,
+          and require costly data-acquisitions systems for recording of data and interfacing with PCs. This makes
+          digital experiments to be limited to well-funded research labs and require constant support from system
+          vendors, as in essence, their operation and programming is typical to that system. </p>
+
+        <p>A general-purpose board like TIVA-C launchpad, might not be a total replacement for industrial grade
+          data-acquisition systems, they provide good starting points in learning the concepts of instrumentation, and
+          for some cases be adequate for the problem at hand. </p>
+
+        <p>To illustrate the use of the board, and for general experiments involving analog sensors, code was developed
+          and tested using a potentiometer as a sensor. <a
+            href="https://github.com/chintanp/ADC_SW_trigger_API/tree/dev">Code 1</a> triggers the ADC conversion after
+          a fixed interval, while <a href="https://github.com/chintanp/ADC_Ext_Trigger_API/tree/dev">Code 2</a> triggers
+          the ADC conversion upon a switch press. The code converts the analog signal to a digital value and then sends
+          it to the connected UART device, normally a PC. Interfacing can be written on the PC to read this value and
+          store it or relay it as per the requirement. </p>
+      </section>
+
+      <footer>
+        This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a
+          href="https://twitter.com/jasonlong">Jason Long</a>.
+      </footer>
+
+      <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost +
+          "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("UA-65872646-1");
+          pageTracker._trackPageview();
+        } catch (err) {}
+      </script>
+
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
